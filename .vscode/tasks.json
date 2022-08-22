@@ -1,0 +1,381 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    //#region <hello_cargo tasks>
+    {
+      "label": "hello_cargo build",
+      "args": ["build", "-v"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "hello_cargo"
+      }
+    },
+    {
+      "label": "hello_cargo clean",
+      "args": ["clean"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "options": {
+        "cwd": "hello_cargo"
+      }
+    },
+    {
+      "label": "hello_cargo run",
+      "args": ["run", "-v"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "hello_cargo"
+      }
+    },
+    {
+      "label": "hello_cargo release",
+      "args": ["build", "--release"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "hello_cargo"
+      }
+    },
+    //#endregion
+    //#region <guessing_game tasks>
+    {
+      "label": "guessing_game build",
+      "args": ["build", "-v"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "guessing_game"
+      }
+    },
+    {
+      "label": "guessing_game clean",
+      "args": ["clean"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "options": {
+        "cwd": "guessing_game"
+      }
+    },
+    {
+      "label": "guessing_game run",
+      "args": ["run", "-v"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "guessing_game"
+      }
+    },
+    {
+      "label": "guessing_game release",
+      "args": ["build", "--release"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "guessing_game"
+      }
+    },
+    //#endregion
+    //#region <variables tasks>
+    {
+      "label": "variables build",
+      "args": ["build", "-v"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "variables"
+      }
+    },
+    {
+      "label": "variables clean",
+      "args": ["clean"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "options": {
+        "cwd": "variables"
+      }
+    },
+    {
+      "label": "variables run",
+      "args": ["run", "-v"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "variables"
+      }
+    },
+    {
+      "label": "variables release",
+      "args": ["build", "--release"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "variables"
+      }
+    },
+    //#endregion
+    //#region <control_flow tasks>
+    {
+      "label": "control_flow build",
+      "args": ["build", "-v"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "control_flow"
+      }
+    },
+    {
+      "label": "control_flow clean",
+      "args": ["clean"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "options": {
+        "cwd": "control_flow"
+      }
+    },
+    {
+      "label": "control_flow run",
+      "args": ["run", "-v"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "control_flow"
+      }
+    },
+    {
+      "label": "control_flow release",
+      "args": ["build", "--release"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "control_flow"
+      }
+    },
+    //#endregion
+  ]
+}
