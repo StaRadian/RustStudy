@@ -23,7 +23,7 @@ fn main() {
     let six_point_four = x.1;
     let one = x.2;
     println!("five_hundred: {five_hundred}, six_point_four: {six_point_four}, one: {one}");
-    let a = [1, 2, 3, 4, 5];
+    // let a = [1, 2, 3, 4, 5];
     // let index = 10;
     // let element = a[index];  //error
     // println!("The value of element is: {}", element);

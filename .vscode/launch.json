@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+        //#region <hello_cargo tasks>
         {
             "name": "hello_cargo Launch",
             "type": "cppvsdbg",
@@ -13,6 +14,8 @@
             "console": "integratedTerminal",
             "preLaunchTask": "hello_cargo build"
         },
+        //#endregion
+        //#region <guessing_game tasks>
         {
             "name": "guessing_game Launch",
             "type": "cppvsdbg",
@@ -25,6 +28,8 @@
             "console": "integratedTerminal",
             "preLaunchTask": "guessing_game build"
         },
+        //#endregion
+        //#region <variables tasks>
         {
             "name": "variables Launch",
             "type": "cppvsdbg",
@@ -37,6 +42,8 @@
             "console": "integratedTerminal",
             "preLaunchTask": "variables build"
         },
+        //#endregion
+        //#region <control_flow tasks>
         {
             "name": "control_flow Launch",
             "type": "cppvsdbg",
@@ -48,6 +55,35 @@
             "environment": [],
             "console": "integratedTerminal",
             "preLaunchTask": "control_flow build"
+        },
+        //#endregion
+        //#region <ownership tasks>
+        {
+            "name": "ownership Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/ownership/target/debug/ownership.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "ownership build"
+        },
+        //#endregion
+        //#region <structure tasks>
+        {
+            "name": "structure Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/structure/target/debug/structure.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "structure build"
         }
+        //#endregion
     ]
 }
