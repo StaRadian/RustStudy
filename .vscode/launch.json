@@ -83,6 +83,20 @@
             "environment": [],
             "console": "integratedTerminal",
             "preLaunchTask": "structure build"
+        },
+        //#endregion
+        //#region <enums tasks>
+        {
+            "name": "enums Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/enums/target/debug/enums.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "enums build"
         }
         //#endregion
     ]

@@ -565,5 +565,162 @@
       }
     },
     //#endregion
+    //#region <enums tasks>
+    {
+      "label": "enums build",
+      "args": ["build", "-v"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "enums"
+      }
+    },
+    {
+      "label": "enums clean",
+      "args": ["clean"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "options": {
+        "cwd": "enums"
+      }
+    },
+    {
+      "label": "enums run",
+      "args": ["run", "-v"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "enums"
+      }
+    },
+    {
+      "label": "enums release",
+      "args": ["build", "--release"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "enums"
+      }
+    },
+    //#endregion
+    //#region <communicator lib tasks>
+    {
+      "label": "communicator build",
+      "args": ["build", "-v"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "communicator"
+      }
+    },
+    {
+      "label": "communicator clean",
+      "args": ["clean"],
+      "command": "cargo",
+      "presentation": {
+        "reveal": "always"
+      },
+      "options": {
+        "cwd": "communicator"
+      }
+    },
+    {
+      "label": "communicator release",
+      "args": ["build", "--release"],
+      "command": "cargo",
+      "group": "build",
+      "problemMatcher": [
+        {
+          "owner": "rust",
+          "fileLocation": ["relative", "${workspaceRoot}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "endLine": 4,
+            "endColumn": 5,
+            "severity": 6,
+            "message": 7
+          }
+        }
+      ],
+      "options": {
+        "cwd": "communicator"
+      }
+    },
+    //#endregion
   ]
 }
