@@ -3,6 +3,14 @@ pub fn add(left: usize, right: usize) -> usize {
 }
 
 #[cfg(test)]
+mod network {
+    fn connect() {
+    }
+    mod client {
+        fn connect() {
+        }
+    }
+}
 mod tests {
     use super::*;
 
