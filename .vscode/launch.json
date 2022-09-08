@@ -97,6 +97,20 @@
             "environment": [],
             "console": "integratedTerminal",
             "preLaunchTask": "enums build"
+        },
+        //#endregion
+        //#region <collection tasks>
+        {
+            "name": "collection Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/collection/target/debug/collection.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "collection build"
         }
         //#endregion
     ]
